@@ -1,5 +1,3 @@
-/* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
-
 /*---------------------------
 General Layout ("Box-Layout")
 ---------------------------*/
@@ -49,4 +47,54 @@ General Layout ("Box-Layout")
     height: 10%;
     margin: 5px 10px;
     float: left;
+}
+
+/*---------------------
+Coloring and typography
+---------------------*/
+
+#container {
+    background-color: #fbfaf6;
+}
+
+#topbar {
+    background-color: #51473d;
+    color: #eae8d3;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+#menu {
+    background-color: #51473d;
+    color: #eae8d3;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 1.1em;
+}
+
+#content {
+    background-color: #eae8d3;
+    color: #7b6f61; /* #797768, #767060 */
+    font-family: "Verdana", "Arial", sans-serif;
+    text-align: justify;
+    line-height: 1.5em;
+    padding-right: 25px;
+}
+
+h1, h2 {
+    font-family: "Times New Roman", "Times", serif;
+}
+
+#maincontent {
+    font-size: 1em;
+}
+
+#subcontent {
+    font-size: 0.9em;
+}
+
+#bottomcontent {
+    font-style: italic;
+    font-size: 0.9em;
 }
