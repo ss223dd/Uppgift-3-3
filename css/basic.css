@@ -1,1 +1,52 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+
+/*---------------------------
+General Layout ("Box-Layout")
+---------------------------*/
+
+#container {
+    max-width: 960px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#topbar {
+    width: 95%;
+    height: 40%;
+    margin: 15px 25px;
+}
+
+#menu {
+    width: 95%;
+    height: 10%;
+    margin: 5px 25px;
+    float: left;
+}
+
+#content {
+    width: 95%;
+    height: 65%;
+    margin: 5px 10px;
+    float: left;
+}
+
+#maincontent {
+    width: 95%;
+    height: 50%;
+    margin: 5px 10px;
+    float: left;
+}
+
+#subcontent {
+    width: 95%;
+    height: 50%;
+    margin: 5px 10px;
+    float: left;
+}
+
+#bottomcontent {
+    width: 95%;
+    height: 10%;
+    margin: 5px 10px;
+    float: left;
+}
