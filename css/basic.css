@@ -3,50 +3,46 @@ General Layout ("Box-Layout")
 ---------------------------*/
 
 #container {
-    max-width: 960px;
-    height: 1000px;
+    width: 960px;
+    height: 800px;
     margin: 0 auto;
+    padding: 5px 15px 20px 15px;
 }
 
 #topbar {
     width: 95%;
-    height: 40%;
-    margin: 15px 25px;
+    height: 30%;
+    margin: 15px 25px 0px 25px;
 }
 
 #menu {
     width: 95%;
     height: 10%;
-    margin: 5px 25px;
-    float: left;
+    margin: 0px 25px;
 }
 
 #content {
-    width: 95%;
-    height: 65%;
-    margin: 5px 10px;
-    float: left;
+    width: auto;
+    height: auto;
+    margin: 0px 25px;
+    padding: 10px;
 }
 
 #maincontent {
-    width: 95%;
-    height: 50%;
-    margin: 5px 10px;
     float: left;
+    width: 60%;
+    padding-right: 10px;
 }
 
 #subcontent {
-    width: 95%;
-    height: 50%;
-    margin: 5px 10px;
     float: left;
+    width: 30%;
+    padding-left: 10px;
+    border-left: 1px dashed #7b6f61;
 }
 
 #bottomcontent {
-    width: 95%;
-    height: 10%;
-    margin: 5px 10px;
-    float: left;
+    clear: both;
 }
 
 /*---------------------
@@ -62,24 +58,21 @@ Coloring and typography
     color: #eae8d3;
     font-family: "Verdana", "Arial", sans-serif;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: right;
 }
 
 #menu {
     background-color: #51473d;
-    color: #eae8d3;
     font-family: "Verdana", "Arial", sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #content {
     background-color: #eae8d3;
     color: #7b6f61; /* #797768, #767060 */
     font-family: "Verdana", "Arial", sans-serif;
-    text-align: justify;
     line-height: 1.5em;
-    padding-right: 25px;
 }
 
 h1, h2 {
@@ -91,10 +84,103 @@ h1, h2 {
 }
 
 #subcontent {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 #bottomcontent {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.8em;
+}
+
+/*-----------
+SPECIAL CASES
+-----------*/
+
+/*-------------
+Menu Format
+-------------*/
+
+#menu > a:first-child {
+    visibility: hidden;
+}
+
+#menu ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    float: left;
+    width: auto;
+    text-decoration: none;
+    background-color: #7b6f61;
+    color: #eae8d3;
+    padding: 10px 20px;
+    border-left: 1px solid #51473d;
+}
+
+#menu li a:hover {
+    background-color: #9c9084;
+}
+
+#menu .active {
+    background-color: #eae8d3;
+    color: #7b6f61;
+}
+
+/*--------------------------
+Content links pseudo classes
+--------------------------*/
+
+#content ul {
+    list-style-type: none;
+}
+
+#content a:link {
+    color: #51473d;
+    font-weight: bold;
+}
+
+#content a:visited {
+    color: #51473d;
+    font-weight: bold;
+}
+
+#content a:focus {
+    color: #51473d;
+    font-weight: bold;
+    border: 1px solid orange;
+}
+
+#content a:hover {
+    color: #51473d;
+    font-weight: bold;
+}
+
+#content a:active {
+    color: #51473d;
+    font-weight: bold;
+}
+
+/*--
+Pics
+--*/
+
+#maincontent img {
+    float: left;
+    margin-right: 10px;
+}
+
+#topbar {
+    background-image: url(pics/coffey.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
 }
