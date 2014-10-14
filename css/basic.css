@@ -3,41 +3,39 @@ General Layout ("Box-Layout")
 ---------------------------*/
 
 #container {
-    width: 960px;
-    height: 800px;
+    width: 644px;
+    height: 672px;
     margin: 0 auto;
-    padding: 5px 15px 20px 15px;
+    padding: 10px 20px 25px 20px;
 }
 
 #topbar {
-    width: 95%;
-    height: 30%;
-    margin: 15px 25px 0px 25px;
+    width: 600px;
+    height: 220px;
+    margin: 0;
+    padding-top: 5px;
 }
 
 #menu {
-    width: 95%;
-    height: 10%;
-    margin: 0px 25px;
+    width: 600px;
+    height: 35px;
+    margin: 0;
 }
 
 #content {
-    width: auto;
-    height: auto;
-    margin: 0px 25px;
-    padding: 10px;
+    width: 600px;
+    height: 382px;
+    margin: 0px;
 }
 
 #maincontent {
     float: left;
-    width: 60%;
-    padding-right: 10px;
+    width: 368px;
 }
 
 #subcontent {
     float: left;
-    width: 30%;
-    padding-left: 10px;
+    width: 228px;
     border-left: 1px dashed #7b6f61;
 }
 
@@ -58,21 +56,21 @@ Coloring and typography
     color: #eae8d3;
     font-family: "Verdana", "Arial", sans-serif;
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.6em;
     text-align: right;
 }
 
 #menu {
     background-color: #51473d;
     font-family: "Verdana", "Arial", sans-serif;
-    font-size: 1.2em;
+    font-size: 12px;
 }
 
 #content {
     background-color: #eae8d3;
     color: #7b6f61; /* #797768, #767060 */
     font-family: "Verdana", "Arial", sans-serif;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 h1, h2 {
@@ -80,16 +78,16 @@ h1, h2 {
 }
 
 #maincontent {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #subcontent {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 #bottomcontent {
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 /*-----------
@@ -106,7 +104,8 @@ Menu Format
 
 #menu ul {
     float: left;
-    width: 100%;
+    width: 490px;
+    height: 30px;
     padding: 0;
     margin-left: 10px;
     list-style-type: none;
@@ -118,7 +117,6 @@ Menu Format
 
 #menu li a {
     float: left;
-    width: auto;
     text-decoration: none;
     background-color: #7b6f61;
     color: #eae8d3;
@@ -181,6 +179,6 @@ Pics
 #topbar {
     background-image: url(pics/coffey.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 600px 200px;
     background-position: bottom;
 }
