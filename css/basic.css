@@ -1,45 +1,54 @@
 /*---------------------------
 General Layout ("Box-Layout")
 ---------------------------*/
+body {
+    margin: 0;
+}
 
 #container {
-    width: 644px;
-    height: 672px;
+    width: 600px;
+    height: 630px;
     margin: 0 auto;
     padding: 10px 20px 25px 20px;
 }
 
 #topbar {
     width: 600px;
-    height: 220px;
-    margin: 0;
+    height: 215px;
+    margin: 0px;
     padding-top: 5px;
 }
 
 #menu {
     width: 600px;
-    height: 35px;
-    margin: 0;
+    height: 30px;
+    padding-top: 5px;
+    margin: 0px;
 }
 
 #content {
-    width: 600px;
-    height: 382px;
+    width: 580px;
+    height: 345px;
     margin: 0px;
+    padding: 20px 10px 15px 10px;
+    
 }
 
 #maincontent {
     float: left;
-    width: 368px;
+    width: 348px;
+    padding-right: 10px;
+    border-right: 1px dashed #7b6f61;
 }
 
 #subcontent {
     float: left;
-    width: 228px;
-    border-left: 1px dashed #7b6f61;
+    width: 210px;
+    padding-left: 10px;
 }
 
 #bottomcontent {
+    padding-top: 5px;
     clear: both;
 }
 
@@ -58,6 +67,7 @@ Coloring and typography
     font-style: italic;
     font-size: 0.6em;
     text-align: right;
+    font-weight: lighter;
 }
 
 #menu {
@@ -73,10 +83,6 @@ Coloring and typography
     line-height: 1.3em;
 }
 
-h1, h2 {
-    font-family: "Times New Roman", "Times", serif;
-}
-
 #maincontent {
     font-size: 0.8em;
 }
@@ -90,6 +96,23 @@ h1, h2 {
     font-size: 0.6em;
 }
 
+h1, h2 {
+    font-family: "Times New Roman", "Times", serif;
+    padding-top: 10px;
+}
+
+h1, h2, p {
+    font-weight: lighter;
+}
+
+#maincontent p, h2{
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
 /*-----------
 SPECIAL CASES
 -----------*/
@@ -98,7 +121,8 @@ SPECIAL CASES
 Menu Format
 -------------*/
 
-#menu > a:first-child {
+#menu > a:first-of-type {
+    float: right;
     visibility: hidden;
 }
 
@@ -106,8 +130,8 @@ Menu Format
     float: left;
     width: 490px;
     height: 30px;
-    padding: 0;
-    margin-left: 10px;
+    padding-left: 10px;
+    margin: 0px;
     list-style-type: none;
 }
 
@@ -116,11 +140,12 @@ Menu Format
 }
 
 #menu li a {
+    text-transform: capitalize;
     float: left;
+    padding: 7px 20px 7px 20px;
     text-decoration: none;
     background-color: #7b6f61;
     color: #eae8d3;
-    padding: 10px 20px;
     border-left: 1px solid #51473d;
 }
 
@@ -128,8 +153,11 @@ Menu Format
     background-color: #9c9084;
 }
 
-#menu .active {
+#menu .active li:active {
     background-color: #eae8d3;
+}
+
+#menu .active li a:active {
     color: #7b6f61;
 }
 
@@ -139,32 +167,30 @@ Content links pseudo classes
 
 #content ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
 }
 
 #content a:link {
     color: #51473d;
-    font-weight: bold;
 }
 
 #content a:visited {
     color: #51473d;
-    font-weight: bold;
 }
 
 #content a:focus {
     color: #51473d;
-    font-weight: bold;
     border: 1px solid orange;
 }
 
 #content a:hover {
     color: #51473d;
-    font-weight: bold;
 }
 
 #content a:active {
     color: #51473d;
-    font-weight: bold;
 }
 
 /*--
@@ -173,7 +199,7 @@ Pics
 
 #maincontent img {
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #topbar {
